@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaskirat | Agentic AI Engineer + Trainer</title>
+  <meta name="description" content="Senior AI Engineer building production agentic systems. GenAI trainer teaching RAG, LLM orchestration, and agentic architectures from real deployment experience. Available for training, workshops, and consulting." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="nav" id="main-nav">
+    <div class="container">
+      <div class="nav-inner">
+        <div class="nav-logo">Jaskirat<span>.</span></div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#teaching">Training</a></li>
+          <li><a href="#speaking">Speaking</a></li>
+          <li><a href="#contact"><button class="btn btn-primary">Get in Touch</button></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-inner">
+
+        <div class="hero-left">
+          <div class="hero-badge">Available for Training and Consulting</div>
+
+          <h1 class="hero-name">Jaskirat</h1>
+          <p class="hero-role">Senior AI Engineer | Agentic AI Trainer</p>
+
+          <p class="hero-desc">
+            I build production agentic systems for the enterprise, and I teach
+            engineering teams how to build them too. Not prompt tricks and demo
+            notebooks. The real thing: orchestration, observability, guardrails,
+            and access control that survive contact with production traffic.
+          </p>
+          <p class="hero-desc">
+            Every session I teach comes from systems I have actually shipped,
+            debugged at 2 a.m., and had to answer for when they broke.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-teal">Hire Me as a Trainer</a>
+            <a href="#projects" class="btn btn-outline">View Projects</a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/jaskiratai/" target="_blank" rel="noopener">↗ LinkedIn</a>
+            <a href="https://github.com/Jaskirat-singh04" target="_blank" rel="noopener">↗ GitHub</a>
+            <a href="https://medium.com/@jaskirat-singh" target="_blank" rel="noopener">↗ Medium</a>
+            <a href="mailto:workwithkirat.ai@gmail.com">↗ Email</a>
+          </div>
+        </div>
+
+        <div class="hero-photo-wrap">
+          <img
+            class="hero-photo"
+            src="Img1.jpeg"
+            alt="Jaskirat - Senior AI Engineer and Agentic AI Trainer"
+            width="360"
+            height="450"
+          />
+          <div class="hero-photo-badge">
+            <div class="hero-photo-badge-role">Senior AI Engineer</div>
+            <div class="hero-photo-badge-sub">Agentic AI Trainer</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="hero-stats-bar">
+      <div class="container">
+        <div class="hero-stats-inner">
+          <div class="hero-stat-block">
+            <div class="hero-stat-number">1000+</div>
+            <div class="hero-stat-label">Engineers trained</div>
+          </div>
+          <div class="hero-stat-block">
+            <div class="hero-stat-number">500+</div>
+            <div class="hero-stat-label">Hours of training delivered</div>
+          </div>
+          <div class="hero-stat-block">
+            <div class="hero-stat-number">4.9/5</div>
+            <div class="hero-stat-label">Average session rating</div>
+          </div>
+          <div class="hero-stat-block">
+            <div class="hero-stat-number">30+</div>
+            <div class="hero-stat-label">Production agentic systems shipped</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">What I've <span>Built</span></h2>
+        <p class="section-subtitle">
+          Systems running in production, not portfolio demos.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-metric">45%</div>
+          <div class="project-metric-label">reduction in manual triage / resolution time</div>
+          <h3 class="project-title">Multi-Agent Workflow Orchestration System</h3>
+          <p class="project-problem">
+            A LangGraph-based system coordinating specialized agents across a
+            complex enterprise workflow, with full step-level tracing so
+            failures are debuggable instead of mysterious.
+          </p>
+          <div class="project-note">
+            <strong>Lesson</strong>
+            Early versions failed silently when one agent handed off bad state
+            to the next. Adding Langfuse tracing at every node turned "why did
+            this break" from a half-day investigation into a two-minute trace read.
+          </div>
+          <div class="stack-tags">
+            <span class="stack-tag">LangGraph</span>
+            <span class="stack-tag">LiteLLM</span>
+            <span class="stack-tag">Langfuse</span>
+            <span class="stack-tag">FastAPI</span>
+            <span class="stack-tag">Python</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-metric">92%</div>
+          <div class="project-metric-label">of unsafe outputs caught before reaching users</div>
+          <h3 class="project-title">Guardrailed Enterprise LLM Gateway</h3>
+          <p class="project-problem">
+            A governed LLM access layer routing every request through policy
+            checks, with role and attribute-based access control so different
+            teams get different capabilities from the same system.
+          </p>
+          <div class="project-note">
+            <strong>Lesson</strong>
+            Blanket guardrails frustrated legitimate power users and still
+            missed edge cases. Moving to attribute-based rules per user role
+            cut false blocks sharply while tightening the actual risk surface.
+          </div>
+          <div class="stack-tags">
+            <span class="stack-tag">NeMo Guardrails</span>
+            <span class="stack-tag">LiteLLM</span>
+            <span class="stack-tag">RBAC/ABAC</span>
+            <span class="stack-tag">OpenTelemetry</span>
+            <span class="stack-tag">Python</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-metric">60%</div>
+          <div class="project-metric-label">faster incident diagnosis across the agent fleet</div>
+          <h3 class="project-title">End-to-End Agent Observability Pipeline</h3>
+          <p class="project-problem">
+            OpenTelemetry instrumentation across a fleet of production agents,
+            feeding structured traces and metrics so on-call engineers can see
+            exactly where a run went wrong.
+          </p>
+          <div class="project-note">
+            <strong>Lesson</strong>
+            Logs alone were useless once agents started calling each other.
+            Distributed tracing was the difference between guessing and knowing.
+          </div>
+          <div class="stack-tags">
+            <span class="stack-tag">OpenTelemetry</span>
+            <span class="stack-tag">Langfuse</span>
+            <span class="stack-tag">LiteLLM</span>
+            <span class="stack-tag">Python</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Experi<span>ence</span></h2>
+        <p class="section-subtitle">
+          Where I've worked, and what I've shipped.
+        </p>
+      </div>
+
+      <div class="career-list">
+
+        <div class="career-item">
+          <div class="career-item-header">
+            <div>
+              <div class="career-role">Senior AI Engineer</div>
+              <div class="career-company">NTT Data</div>
+            </div>
+            <div class="career-date">Mar 2026 – Present</div>
+          </div>
+          <p class="career-summary">
+            Building and operating production agentic systems at enterprise
+            scale. Multi-agent orchestration with LangGraph, unified model
+            access through LiteLLM, full-stack observability with Langfuse
+            and OpenTelemetry, safety enforcement with NeMo Guardrails, and
+            fine-grained access control via RBAC and ABAC.
+          </p>
+        </div>
+
+        <div class="career-item">
+          <div class="career-item-header">
+            <div>
+              <div class="career-role">AI Engineer</div>
+              <div class="career-company">Great Learning</div>
+            </div>
+            <div class="career-date">Aug 2025 – Mar 2026</div>
+          </div>
+          <p class="career-summary">
+            Designed and shipped LLM-powered learning products, building RAG
+            pipelines and evaluation frameworks that laid the groundwork for
+            the multi-agent orchestration work that followed at NTT Data.
+          </p>
+        </div>
+
+        <div class="career-item">
+          <div class="career-item-header">
+            <div>
+              <div class="career-role">AI Engineer</div>
+              <div class="career-company">Avkalan AI</div>
+            </div>
+            <div class="career-date">Aug 2023 – Jul 2025</div>
+          </div>
+          <p class="career-summary">
+            Built and shipped GenAI applications end to end — prompt
+            engineering, RAG pipelines, and LLM integration — taking products
+            from prototype to production for real users.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="side-project">
+        <div class="side-project-label">Side Project</div>
+        <h3 class="side-project-title">Agent Run · Founder &amp; Author</h3>
+        <p class="side-project-desc">
+          A weekly newsletter on agentic AI read by 500+ practitioners. I break
+          down real agent architectures, production patterns, and what
+          actually works versus what only demos well. Writing it keeps me
+          sharp on the whole field, not just my own stack.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="teaching">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">What I <span>Teach</span></h2>
+        <p class="section-subtitle">
+          Every topic taught from production deployment experience. No slides
+          recycled from someone else's course.
+        </p>
+      </div>
+
+      <div class="teach-grid">
+
+        <div class="teach-cluster">
+          <div class="teach-cluster-head">
+            <div class="teach-cluster-label">Track 01</div>
+            <div class="teach-cluster-title">Foundations</div>
+          </div>
+          <div class="teach-cluster-body">
+            <div class="teach-item">Python for AI Engineering</div>
+            <div class="teach-item">LLM Fundamentals for Practitioners</div>
+            <div class="teach-item">Prompt Engineering That Survives Production</div>
+            <div class="teach-item">Working With Model APIs and Providers</div>
+          </div>
+        </div>
+
+        <div class="teach-cluster">
+          <div class="teach-cluster-head">
+            <div class="teach-cluster-label">Track 02</div>
+            <div class="teach-cluster-title">Building With LLMs</div>
+          </div>
+          <div class="teach-cluster-body">
+            <div class="teach-item">RAG Systems: Beginner to Production</div>
+            <div class="teach-item">LLM Orchestration With LangGraph</div>
+            <div class="teach-item">Text-to-SQL and Structured Data Interfaces</div>
+            <div class="teach-item">Vector Databases and Retrieval Design</div>
+            <div class="teach-item">Evaluation and Testing for LLM Systems</div>
+          </div>
+        </div>
+
+        <div class="teach-cluster">
+          <div class="teach-cluster-head">
+            <div class="teach-cluster-label">Track 03</div>
+            <div class="teach-cluster-title">Production Agentic AI</div>
+          </div>
+          <div class="teach-cluster-body">
+            <div class="teach-item">Agentic AI and Multi-Agent Architectures</div>
+            <div class="teach-item">Observability for AI Systems (Langfuse, OpenTelemetry)</div>
+            <div class="teach-item">Guardrails and Safety With NeMo Guardrails</div>
+            <div class="teach-item">Access Control for AI: RBAC and ABAC</div>
+            <div class="teach-item">Unified Model Access With LiteLLM</div>
+            <div class="teach-item">Deploying and Operating Agents at Scale</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="formats-row">
+        <span class="formats-label">Formats</span>
+        <span class="format-tag">Live Online Session</span>
+        <span class="format-tag">Corporate Workshop</span>
+        <span class="format-tag">Half-Day Intensive</span>
+        <span class="format-tag">Full-Day Intensive</span>
+        <span class="format-tag">Capstone Mentoring</span>
+        <span class="format-tag">Team Enablement Program</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Replace placeholder names below with real logo images if available -->
+  <div class="clients-strip" id="speaking">
+    <div class="container">
+      <div class="clients-label">Tech Speaker At</div>
+      <div class="clients-logos">
+        <span class="client-logo-text">Microsoft</span>
+        <span class="client-logo-text">Google</span>
+        <span class="client-logo-text">IIFT</span>
+        <span class="client-logo-text">IIIT Delhi</span>
+        <span class="client-logo-text">VIPS</span>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Let's <span>Work Together</span></h2>
+        <p class="section-subtitle">
+          Two ways I can help. Pick the one that fits and I'll get back within 24 hours.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div>
+          <div class="contact-path">
+            <div class="contact-path-label">For Training and Workshops</div>
+            <div class="contact-path-text">
+              Corporate engineering teams, upskilling cohorts, and technical
+              bootcamps. Tell me the topic, the format, and your team's
+              current level, and I'll share availability and a rate.
+            </div>
+          </div>
+
+          <div class="contact-path">
+            <div class="contact-path-label">For Consulting and Projects</div>
+            <div class="contact-path-text">
+              Agentic systems, RAG pipelines, LLM orchestration, observability,
+              and guardrails. Tell me what you're building and where it's stuck.
+            </div>
+          </div>
+
+          <div class="contact-links">
+            <div class="contact-link-item">
+              Email:
+              <a href="mailto:workwithkirat.ai@gmail.com">workwithkirat.ai@gmail.com</a>
+            </div>
+            <div class="contact-link-item">
+              LinkedIn:
+              <a href="https://www.linkedin.com/in/jaskiratai/" target="_blank" rel="noopener">jaskiratai</a>
+            </div>
+            <div class="contact-link-item">
+              GitHub:
+              <a href="https://github.com/Jaskirat-singh04" target="_blank" rel="noopener">Jaskirat-singh04</a>
+            </div>
+            <div class="contact-link-item">
+              Medium:
+              <a href="https://medium.com/@jaskirat-singh" target="_blank" rel="noopener">@jaskirat-singh</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sign up free at https://formspree.io, create a form, and replace YOUR_FORM_ID below -->
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/mzepnveb" method="POST">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="name">Name</label>
+              <input class="form-input" type="text" id="name" name="name"
+                placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-input" type="email" id="email" name="email"
+                placeholder="your@email.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="type">What do you need?</label>
+            <select class="form-select" id="type" name="type">
+              <option value="">Select an option</option>
+              <option value="training">Training or Workshop</option>
+              <option value="enablement">Team Enablement</option>
+              <option value="consulting">Consulting Project</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Tell me more</label>
+            <textarea class="form-textarea" id="message" name="message"
+              placeholder="Topic, format, timeline, or what you're building..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-teal form-submit">Send Message</button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">Jaskirat<span>.</span></div>
+        <div class="footer-role">Senior AI Engineer &amp; Agentic AI Trainer</div>
+        <ul class="footer-links">
+          <li><a href="https://www.linkedin.com/in/jaskiratai/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/Jaskirat-singh04" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://medium.com/@jaskirat-singh" target="_blank" rel="noopener">Medium</a></li>
+          <li><a href="mailto:workwithkirat.ai@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
